@@ -142,7 +142,7 @@ adjustLightness color percentage adjust =
     hslValues
       |> .lightness
       |> adjust pc
-      |> negate
+      |> abs
 
 
 percentageToFloat : Float -> Float
